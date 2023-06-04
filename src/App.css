@@ -1,28 +1,87 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Fonts */
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    src: url('./assets/fonts/inter-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 500;
+    src: url('./assets/fonts/inter-medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 700;
+    src: url('./assets/fonts/inter-bold.woff2') format('woff2');
 }
 
 /* Variables */
 :root {
+    /* Colors */
     --clr-primary: hsl(0, 89%, 66%);
     --clr-neutral-800: hsl(250, 18%, 19%);
     --clr-neutral-500: hsl(254, 6%, 58%);
     --clr-neutral-200: hsl(0, 0%, 96%);
     --clr-neutral-100: hsl(0, 0%, 100%);
 
+    /* Typography */
+    --ff: 'Inter', sans-serif;
     --fs-600: 1.5rem;
     --fs-500: 0.875rem;
     --fs-400: 0.625rem;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
 }
 
 /* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    
+    font-family: var(--ff);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-800);
+    line-height: 1.5;
+}
+
+main {
+    padding: 1.5em;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* Typography */
+.header__title {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-medium);
+    color: var(--clr-neutral-100);
+    line-height: 1.2;
+    letter-spacing: -0.075em;
+}
 
+/* =============
+Layout 
+============= */
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    background-color: var(--clr-primary);
+}
 
-/* Layout */
+.header__icon {
+    padding-block: 1.5em;
+}
+
+/* Locations */

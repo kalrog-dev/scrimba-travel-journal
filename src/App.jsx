@@ -1,3 +1,4 @@
+import data from './data'
 import Location from './components/Location'
 import Header from './components/Header'
 import './App.css'
@@ -7,9 +8,9 @@ export default function App() {
     <>
       <div className="wrapper">
         <Header />
-        <Location />
-        <Location />
-        <Location />
+        <main>
+          {data.map(item => <Location {...item} />)}
+        </main>
       </div>
     </>
   )
