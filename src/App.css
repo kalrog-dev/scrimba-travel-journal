@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+:root {
+    --clr-primary: hsl(0, 89%, 66%);
+    --clr-neutral-800: hsl(250, 18%, 19%);
+    --clr-neutral-500: hsl(254, 6%, 58%);
+    --clr-neutral-200: hsl(0, 0%, 96%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --fs-600: 1.5rem;
+    --fs-500: 0.875rem;
+    --fs-400: 0.625rem;
+}
+
+/* General styles */
+body {
+    
+}
+
+/* Typography */
+
+
+/* Layout */
