@@ -5,7 +5,7 @@ export default function Location(props) {
         <article className="location">
             <div className="location__content">
                 <div className="location__country-container">
-                    <img className="location__icon" src="" alt="Location icon" aria-hidden="true" />
+                    <img className="location__icon" src={locationIcon} alt="Location icon" aria-hidden="true" />
                     <p className="location__country">{props.location}</p>
                     <a className="location__link" href={props.googleMapsUrl} target="_blank" rel="noopener noreferrer">View on Google Maps</a>
                 </div>
